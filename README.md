@@ -13,9 +13,6 @@ It fetches movie details from the **OMDb API**.
 - 👨‍🎤 View cast and genre
 - 📜 Read a short plot summary
 
-## 🌐 Live Demo
-
-[Click here to open the app](https://mehar-khan0786.github.io/MovieSearchApp/film.html)
 
 ## 🚀 Technologies Used
 
