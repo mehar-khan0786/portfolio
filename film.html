@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+
+<body class="h-screen">
+    <div class="bg-green-600 h-full w-full flex justify-center items-center p-5  small:p-0">
+        <div class="shadow-2xl shadow-black  bg-black md:w-1/2 flex flex-col justify-evenly items-center rounded-2xl p-3">
+            <div>
+                <h1 class="text-white  text-center small:m-0 lg:text-4xl small:text-3xl">Movie Search App</h1>
+                <div class="text-center">
+                    <p class="text-white small:text-sm lg:text-xl xl:text-xl">Discover and explore your favourite movies like never befire with our
+                        intutitive Movie Search App, your Ultimate cinematic companion.</p>
+                    </p>
+                </div>
+            </div>
+
+            <!-- input -->
+            <div  class="flex sm:flex-row small:w-full sm:w-full sm:h-12 m-7 font-bold">
+                <input type="text"
+                    class="border small:w-full border-white text-white w-full pl-3 rounded hover:cursor-pointer hover:scale-105 transition-all duration-100"
+                    placeholder="Enter movie name here...">
+                <button
+                    class="bg-green-700 border rounded mx-4 text-xl small:text-md   hover:bg-green-500 border-white w-1/2  hover:scale-105 transition-all duration-100">Search</button>
+            </div>
+
+            <!-- bottom -->
+
+            <div id="main" class="w-full border border-gray-50 shadow shadow-white p-3 hidden ">
+                <div class="text-white flex sm:flex-row justify-evenly items-center w-full h-full small:flex-col">
+                    <!-- picture -->
+                   <img id="poster" class="xl:w-40 lg:w-36 sm:w-36 small:w-10" src="" alt="">
+
+                    <!-- descriptions -->
+                    <div class=" flex flex-col justify-between items-center lg:gap-7 w-1/2 small:gap-1">
+                        <h1 id="name" class="font-bold small:text-xl sm:text-4xl lg:text-4xl xl:text-4xl"></h1>
+                        <h2 id="star">star</h2>
+                        <div class="flex gap-4">
+                            <p id="rated">first</p>
+                            <p id="year">second</p>
+                            <p id="min">third</p>
+                        </div>
+                        <!-- action -->
+
+                        <div class="flex gap-2 ">
+                            <button id="gen101" class="border border-white text-white font-bold rounded-md xl:py-3 xl:px-8 sm:py-2 px-3 ">Action</button>
+                            <button id="gen102" class="border border-white text-white font-bold rounded-md xl:py-3 xl:px-8 sm:py-2 px-3">Adventure</button>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="border-1 border-gray-100 opacity-14 w-full my-5"></div>
+                <!-- plot -->
+
+                <div class="w-full text-white">
+                    <div>
+                        <h1 class="text-xl ">Plot:</h1>
+                        <div  class="text-white">
+                            <p id="plot" class="lg:text-xs xl:text-xl small:text-xs"></p>
+                        </div>
+                    </div>
+
+                    <div class="text-white ">
+                        <h1 class="text-xl">Cast:</h1>
+                            <p id="cast" class="lg:text-xs xl:text-xl small:text-xs"></p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="js/script.js"></script>
+</html>
