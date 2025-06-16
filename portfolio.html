@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- npx tailwindcss -i style.css -o output.css --watch -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <link rel="stylesheet" href="output.css">
+</head>
+
+<body class="scroll-smooth min-h-screen bg-gradient-to-tl from-green-600 to-black text-white">
+
+    <div class="w-full h-full scroll-mt-20 p-4 small:h-full  ">
+        <!-- nav bar -->
+        <nav
+            class="h-20 w-full text-white flex justify-between items-center px-10 py-15  gap-3 sm:flex-row small:flex-col small:py-1">
+            <!-- leftside -->
+            <div class="">
+                <h1 class="sm:text-2xl small:text-xl">Portfolio</h1>
+            </div>
+            <div class="">
+                <ul class="flex sm:text-xl sm:gap-2 lg:gap-4 xl:gap-10 small:gap-2">
+                    <li class="hover:text-green-400 hover:scale-130 transition-all duration-140 outline-none"><a
+                            href="#home">Home</a></li>
+                    <li class="hover:text-green-400 hover:scale-130 transition-all duration-140 outline-none"><a
+                            href="#about">About</a>
+                    </li>
+                    <li class="hover:text-green-400 hover:scale-130 transition-all duration-140 outline-none"><a
+                            href="#skills">Skills</a></li>
+                    <li class="hover:text-green-400 hover:scale-130 transition-all duration-140 outline-none"><a
+                            href="#project">Projects</a>
+                    </li>
+                    <li class="hover:text-green-400 hover:scale-130 transition-all duration-140 outline-none"><a
+                            href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <!-- 1stmain -->
+        <main id="home"
+            class="w-full scroll-mt-20 sm:pt-1 small:pt-2 xl:my-50 small:flex-col-reverse md:flex-col lg:flex-row sm:flex-row text-white flex justify-evenly items-center  lg:py-15 sm:py-10 home">
+            <!-- leftside -->
+            <div class="sm:w-1/2 small:h-1/4">
+                <h1 class="sm:text-3xl font-bold small:text-2xl xl:text-4xl" data-aos="fade-up">Hello,Its' Me</h1>
+                <h1 class="sm:text-7xl font-bold small:text-3xl xl:text-7xl" data-aos="fade-up">Mehar Khan</h1>
+                <h1 class="sm:text-3xl font-bold small:text-2xl xl:text-4xl" data-aos="fade-up">And I'm a <span
+                        class="text-green-400" data-aos="fade-up">Frontend Developer</span></h1>
+
+                <div class="sm:my-5 small:my-2">
+                    <p class="small:text-[10px] xl:text-2xl sm:text-xs" data-aos="fade-up">I am a frontend web
+                        development enthusiast with
+                        a good knowledge of HTML, CSS, JavaScript, and
+                        Tailwind CSS.</p>
+                </div>
+                <div class="flex justify-start items-center gap-3" data-aos="fade-up">
+                    <a href="https://x.com/MeharKhan689453">
+                        <img src="images/twitter.png" class="w-13 hover:scale-130 transition-all duration-150" alt="">
+                    </a>
+                    <a href="https://github.com/mehar-khan0786"> <img
+                            src="https://icones.pro/wp-content/uploads/2021/06/icone-github-verte.png"
+                            class="w-12 hover:scale-130 transition-all duration-150" alt=""></a>
+                    <a href="https://www.linkedin.com/in/mehar-khan-6a236a293/"><img src="images/linkedin.png"
+                            class="w-10 hover:scale-130 transition-all duration-150" alt=""></a>
+                    <a href="https://www.instagram.com/mehar_khan_8989/">
+                        <img class="w-14 hover:scale-130 transition-all duration-150"
+                            src="https://seekvectors.com/files/download/98145f0484f09ba8509544e1922ad75d.png" alt="">
+                    </a>
+                </div>
+
+
+                <div class="sm:my-5 small:my-1" data-aos="fade-up">
+                    <a href="MyCV.pdf" download target="_blank">
+                        <button
+                            class="rounded-full hover:scale-105 transition-transform duration-150 hover:bg-green-400 small:text-xl small:px-3 small:py-2 lg:w-1/3 lg:h-15 text-black bg-green-500">
+                            Download CV
+                        </button>
+                    </a>
+
+
+                </div>
+
+
+            </div>
+            <!-- rightside -->
+
+            <div data-aos="zoom-in" class="relative sm:size-70 small:size-50 xl:size-100 ">
+                <!-- Rotating border circle -->
+                <div
+                    class="w-full h-full shadow-2xl shadow-black rounded-full border-4 hover:animate-spin border-l-black border-r-black border-t-green-400 border-b-green-400 ">
+                </div>
+
+                <!-- Static image centered -->
+                <img src="images/mehar.png"
+                    class="absolute top-1/2 left-1/2  translate-x-[-50%] translate-y-[-50%] rounded-full sm:size-60 small:size-40 xl:size-90 object-cover"
+                    alt="Mehar's Photo">
+            </div>
+
+        </main>
+
+
+        <!-- 2ndmain -->
+        <main
+            class="mt-20 scroll-mt-20 w-full sm:pt-1 small:pt-2  small:flex-col-reverse md:flex-col lg:flex-row sm:flex-row text-white flex justify-evenly items-center  lg:py-15 sm:py-10 "
+            id="about">
+            <!-- rightside -->
+
+            <div data-aos="zoom-in" class="relative sm:size-70 small:size-50 xl:size-100">
+                <!-- Rotating border circle -->
+                <div
+                    class="w-full h-full rounded-full shadow-2xl shadow-black border-4 hover:animate-spin border-l-black border-r-black border-t-green-400 border-b-green-400">
+                </div>
+
+                <!-- Static image centered -->
+                <img src="images/mehar.png"
+                    class="absolute top-1/2 left-1/2  translate-x-[-50%] translate-y-[-50%] rounded-full sm:size-60 small:size-40 xl:size-90 object-cover"
+                    alt="Mehar's Photo">
+            </div>
+
+            <!-- leftside -->
+            <div class="sm:w-1/2 small:h-1/4 xl:my-40 lg:mt-40" id="about">
+
+                <h1 class="sm:text-7xl font-bold small:text-3xl xl:text-7xl" data-aos="fade-up">About me</h1>
+                <h1 class="sm:text-3xl font-bold small:text-2xl xl:text-4xl" data-aos="fade-up"><span
+                        class="text-green-400" data-aos="fade-up">Frontend Developer | DSA & Backend Fundamentals</span>
+                </h1>
+
+                <div class="sm:my-5 small:my-2 shadow-2xl shadow-black p-3 rounded-2xl">
+                    <p class="small:text-[10px]   xl:text-2xl sm:text-xs" data-aos="fade-up">I am a frontend web
+                        development enthusiast with strong knowledge of HTML, CSS, JavaScript, and Tailwind CSS. I enjoy
+                        creating clean, responsive websites and continuously improve my skills by building real-world
+                        projects. I also have a good understanding of Data Structures and Algorithms (DSA), along with
+                        backend basics using PHP and SQL. I am eager to learn, grow, and contribute as a frontend
+                        developer.</p>
+                </div>
+
+
+                <!-- BUTTON (NO ID on this outer div) -->
+                <div class="sm:my-5 small:my-1" data-aos="fade-up">
+
+                    <!-- Button with its own ID -->
+                    <button id="readMoreBtn"
+                        class="rounded-full shadow-2xl shadow-black visible  hover:scale-105 transition-transform duration-150 hover:bg-green-400 small:text-xl small:px-3 small:py-2 lg:w-1/3 lg:h-15 text-black bg-green-500">
+                        Read More
+                    </button>
+
+                    <!-- Hidden content -->
+                    <div id="more-about" class="hidden mt-4 text-white shadow-2xl shadow-black p-3 rounded-2xl ">
+                        <p class="small:text-[10px]  xl:text-2xl sm:text-xs" data-aos="fade-up">I have developed multiple
+                            real-world projects such as a Weather App, Movie App, and several
+                            others that extensively use APIs to fetch and display dynamic data. These projects have
+                            helped me gain strong hands-on experience with technologies like JavaScript, REST APIs,
+                            JSON, and responsive design. Through these projects, I’ve worked on integrating third-party
+                            services, handling asynchronous operations, and building user-friendly interfaces. This
+                            practical exposure has significantly improved my problem-solving abilities and strengthened
+                            my frontend development skills.
+                        </p>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </main>
+
+        <!-- skills -->
+        <div class=" mt-40 py-50 px-6 shadow-2xl shadow-black" id="skills">
+            <h1 class="text-center font-bold text-5xl  hover:scale-106 transition-transform duration-150"
+                data-aos="fade-up">MY Skills</h1>
+
+            <div class="flex flex-wrap justify-between items-start gap-8 py-10">
+
+                <!-- Left Section: Technical Skills -->
+                <div class="font-bold w-full lg:w-[60%] " data-aos="fade-up">
+                    <div class="text-center text-4xl mb-4  hover:scale-106 transition-transform duration-150">Technical
+                        Skills</div>
+
+                    <!-- HTML -->
+                    <div class="my-4">
+                        <div class="flex justify-between items-center">
+                            <h1>HTML</h1>
+                            <h1>99%</h1>
+                        </div>
+                        <div class="relative h-5 hover:scale-104 transition-transform duration-150">
+                            <div class="w-full h-3 bg-black rounded-full"></div>
+                            <div class="absolute top-0 h-3 w-[99%] bg-green-400 rounded-full"></div>
+                        </div>
+                    </div>
+
+                    <!-- CSS -->
+                    <div class="my-4">
+                        <div class="flex justify-between items-center ">
+                            <h1>CSS</h1>
+                            <h1>70%</h1>
+                        </div>
+                        <div class="relative h-5  hover:scale-104 transition-transform duration-150">
+                            <div class="w-full h-3 bg-black rounded-full"></div>
+                            <div class="absolute top-0 h-3 w-[70%] bg-green-400 rounded-full"></div>
+                        </div>
+                    </div>
+
+                    <!-- Tailwind CSS -->
+                    <div class="my-4">
+                        <div class="flex justify-between items-center">
+                            <h1>Tailwind CSS</h1>
+                            <h1>60%</h1>
+                        </div>
+                        <div class="relative h-5  hover:scale-104 transition-transform duration-150">
+                            <div class="w-full h-3 bg-black rounded-full"></div>
+                            <div class="absolute top-0 h-3 w-[60%] bg-green-400 rounded-full"></div>
+                        </div>
+                    </div>
+
+                    <!-- JavaScript -->
+                    <div class="my-4">
+                        <div class="flex justify-between items-center">
+                            <h1>JavaScript</h1>
+                            <h1>80%</h1>
+                        </div>
+                        <div class="relative h-5  hover:scale-104 transition-transform duration-150">
+                            <div class="w-full h-3 bg-black rounded-full"></div>
+                            <div class="absolute top-0 h-3 w-[80%] bg-green-400 rounded-full"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Section: Professional Skills -->
+                <div class="bg-green-700 text-white rounded-lg w-full lg:w-[35%] p-6" data-aos="fade-up">
+                    <div class="text-3xl font-bold mb-6 text-center  hover:scale-106 transition-transform duration-150">
+                        Professional Skills</div>
+
+                    <div class="grid grid-cols-2 gap-6">
+                        <!-- Team Work -->
+                        <div class="flex flex-col items-center  hover:scale-106 transition-transform duration-120">
+                            <div
+                                class="w-20 h-20 rounded-full border-4 border-cyan-400 flex items-center justify-center  hover:scale-120 transition-transform duration-150">
+                                <span class="text-xl font-bold">90%</span>
+                            </div>
+                            <div class="mt-2">Team Work</div>
+                        </div>
+
+                        <!-- Creativity -->
+                        <div class="flex flex-col items-center  hover:scale-106 transition-transform duration-120">
+                            <div
+                                class="w-20 h-20 rounded-full border-4 border-cyan-300 flex items-center justify-center  hover:scale-106 transition-transform duration-150">
+                                <span class="text-xl font-bold">80%</span>
+                            </div>
+                            <div class="mt-2">Creativity</div>
+                        </div>
+
+                        <!-- Project Management -->
+                        <div class="flex flex-col items-center  hover:scale-106 transition-transform duration-120">
+                            <div
+                                class="w-20 h-20 rounded-full border-4 border-yellow-400 flex items-center justify-center  hover:scale-106 transition-transform duration-150">
+                                <span class="text-xl font-bold">55%</span>
+                            </div>
+                            <div class="mt-2 text-center">Project Mgmt</div>
+                        </div>
+
+                        <!-- Communication -->
+                        <div class="flex flex-col items-center  hover:scale-106 transition-transform duration-120">
+                            <div
+                                class="w-20 h-20 rounded-full border-4 border-green-400 flex items-center justify-center  hover:scale-106 transition-transform duration-150">
+                                <span class="text-xl font-bold">70%</span>
+                            </div>
+                            <div class="mt-2">Communication</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- projects -->
+        <div class="w-full p-8 py-10 mt-100" id="project">
+
+            <h1 class="font-bold text-5xl text-center m-10 hover:scale-110 transition-all duration-150"
+                data-aos="fade-up">My Latest Projects</h1>
+
+            <div class="flex justify-evenly items-center my-10 small:mx-1">
+                <img src="images/project1.png"
+                    class="small:size-30 shadow-2xl sm:size-50 small:mx-1 shadow-black lg:w-110 lg:h-80 hover:scale-110 transition-all duration-150 border-4 border-green-500 rounded-3xl "
+                    data-aos="fade-up" alt="">
+                <img src="images/project2.png"
+                    class="small:small:size-30 shadow-2xl small:mx-1 sm:size-50 shadow-black lg:w-110 lg:h-80 hover:scale-110 transition-all duration-150 border-4 border-green-500 rounded-3xl"
+                    data-aos="fade-up" alt="">
+            </div>
+            <div class="flex justify-evenly items-center my-10">
+                <img src="images/project3.png"
+                    class="small:size-30  shadow-2xl sm:size-50 small:mx-1 shadow-black md:w-110 md:h-80 hover:scale-110 transition-all duration-150 border-4 border-green-500 rounded-3xl"
+                    data-aos="fade-up" alt="">
+                <img src="images/project4.png"
+                    class="small:size-30  shadow-2xl sm:size-50 small:mx-1 shadow-black md:w-110 md:h-80 hover:scale-110 transition-all duration-150 border-4 border-green-500 rounded-3xl"
+                    data-aos="fade-up" alt="">
+            </div>
+
+        </div>
+
+        <!-- message -->
+        <div id="contact" class="text-center p-6 mt-100 sm:p-10 mb-50 flex flex-col justify-center items-center">
+            <h1 class="font-bold text-4xl sm:text-5xl my-5 hover:text-green-500 hover:scale-105 transition-transform duration-150"
+                data-aos="fade-up">
+                Contact <span class="text-green-950">Me!</span>
+            </h1>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-screen-sm sm:max-w-2xl px-2">
+
+                <div class="h-12 shadow-2xl shadow-black bg-gray-700 rounded-full flex items-center hover:scale-105 transition duration-150 hover:bg-gray-800"
+                    data-aos="fade-up">
+                    <input type="text"
+                        class="w-full h-12 border-none rounded-full outline-none pl-4 bg-transparent text-white"
+                        placeholder="Your name">
+                </div>
+
+                <div class="h-12 shadow-2xl shadow-black bg-gray-700 rounded-full flex items-center hover:scale-105 transition duration-150 hover:bg-gray-800"
+                    data-aos="fade-up">
+                    <input type="email"
+                        class="w-full h-12 border-none rounded-full outline-none pl-4 bg-transparent text-white"
+                        placeholder="Your Email">
+                </div>
+
+                <div class="h-12 shadow-2xl shadow-black bg-gray-700 rounded-full flex items-center hover:scale-105 transition duration-150 hover:bg-gray-800"
+                    data-aos="fade-up">
+                    <input type="text"
+                        class="w-full h-12 border-none rounded-full outline-none pl-4 bg-transparent text-white"
+                        placeholder="Phone-No">
+                </div>
+
+                <div class="h-12 shadow-2xl shadow-black bg-gray-700 rounded-full flex items-center hover:scale-105 transition duration-150 hover:bg-gray-800"
+                    data-aos="fade-up">
+                    <input type="text"
+                        class="w-full h-12 border-none rounded-full outline-none pl-4 bg-transparent text-white"
+                        placeholder="Address">
+                </div>
+
+                <div class="col-span-1 shadow-2xl shadow-black sm:col-span-2 bg-gray-700 rounded-xl hover:scale-105 transition duration-150 hover:bg-gray-800"
+                    data-aos="fade-up">
+                    <textarea
+                        class="w-full h-40 border-none rounded-xl outline-none pl-4 pt-3 bg-transparent text-white resize-none"
+                        placeholder="Message"></textarea>
+                </div>
+            </div>
+
+            <div class="my-5 w-full max-w-screen-sm px-2" data-aos="fade-up">
+                <button
+                    class="rounded-full font-bold w-full sm:w-1/3 py-3 text-white bg-gray-700 hover:bg-gray-800 hover:scale-105 transition duration-150">
+                    Send
+                </button>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+    </div>
+
+    <script>
+        // Toggle button with JavaScript
+        let readMoreBtn = document.getElementById("readMoreBtn");
+        let moreAbout = document.getElementById("more-about");
+        readMoreBtn.addEventListener('click', () => {
+            moreAbout.classList.toggle('hidden');
+            readMoreBtn.classList.toggle('hidden');
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800, // Duration in milliseconds
+            once: false,
+        });
+    </script>
+
+
+
+
+</body>
+
+</html>
