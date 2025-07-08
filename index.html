@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+</head>
+
+<body class="h-screen w-screen">
+
+    <div class="h-full shadow-2xl shadow-black w-full bg-gradient-to-l to-blue-400 from-blue-700 flex flex-col justify-evenly items-center ">
+
+        <h1 class="text-8xl">Tailwind Toggle Switch</h1>
+
+        <div id="box" class="shadow-2xl shadow-black rounded-2xl size-1/2 bg-white flex flex-col justify-center gap-10">
+
+            <div id="inner" class="relative flex  items-center p-1 rounded-s-full rounded-e-full w-36 h-16 border">
+                <button onclick="fun1()" id="toggle" class="rounded-full bg-black absolute size-14 "></button>
+            </div>
+            <div id="inner2" class="relative flex items-center p-1 rounded-s-full rounded-e-full w-36 h-16 border">
+                <button onclick="fun2()" id="toggle2" class="rounded-full bg-red-600 absolute size-14 "></button>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+<script>
+
+    let value = 0;
+    function fun1() {
+        let toggle = document.querySelector("#toggle");
+        let inner = document.querySelector("#inner");
+        let box = document.querySelector("#box");
+        if (value === 0) {
+            box.classList.remove("bg-white");
+            box.classList.add("bg-black");
+            inner.classList.add("border-white");
+            toggle.classList.add("bg-white", "right-1");
+            inner2.classList.add("border-white");
+            value = 1;
+        }
+        else {
+            box.classList.remove("bg-black");
+            box.classList.add("bg-white");
+            inner.classList.remove("border-white");
+            toggle.classList.remove("bg-white", "right-1");
+            inner2.classList.remove("border-white");
+            
+            value = 0;
+        }
+    }
+
+    function fun2() {
+        
+        let toggle = document.querySelector("#toggle2");
+        let inner2 = document.querySelector("#inner2");
+        let box = document.querySelector("#box");
+        if (value === 0) {
+            box.classList.remove("bg-white");
+            box.classList.add("bg-red-600");
+            inner2.classList.add("border-white");
+            toggle2.classList.add("bg-white", "right-1");
+            value = 1;
+        }
+        else {
+            box.classList.remove("bg-red-600");
+            box.classList.add("bg-white");
+            inner2.classList.remove("border-white");
+            toggle2.classList.remove("bg-white", "right-1");
+            value = 0;
+        }
+    }
+
+</script>
+
+</html>
